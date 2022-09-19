@@ -67,42 +67,42 @@
 #     second_percent = big_letters/str_len * 100
 #     print("Процент маленьких букв - {0} , Процент больших букв - {1}".format(first_percent,second_percent))
 
-#ДЗ Задание 5 Посчитать % строк где больше загл букв 
-# def find_big_letters(s):
-#     mini_letters = 0
-#     big_letters = 0
-#     for letter in s:
-#         if letter.islower():
-#             mini_letters+=1    
-#         else:
-#             big_letters+=1
-#     if big_letters > mini_letters:
-#         return True
-#     else :
-#         return False
+#ДЗ Задание 5 Посчитать % строк где больше загл букв
+def find_big_letters(s):
+    mini_letters = 0
+    big_letters = 0
+    for letter in s:
+        if letter.islower():
+            mini_letters+=1
+        else:
+            big_letters+=1
+    if big_letters > mini_letters:
+        return True
+    else :
+        return False
 
-# strings = str(input()).split()
-# string_len = len(strings)
-# big_str=0
-# small_str = 0 
-# for string in strings:
-#     if find_big_letters(string):
-#         big_str+=1
-#     else:
-#         small_str+=1
+strings = str(input()).split()
+string_len = len(strings)
+big_str=0
+small_str = 0
+for string in strings:
+    if find_big_letters(string):
+        big_str+=1
+    else:
+        small_str+=1
             
-# first = big_str/ string_len * 100
-# second = small_str / string_len * 100
+first = big_str/ string_len * 100
+second = small_str / string_len * 100
     
-# print("big :{0} percent, small :{1} percent".format(first,second))  
+print("big :{0} percent, small :{1} percent".format(first,second))
 
 #ДЗ Задание 6 (Вообще 5, но мне было интересно его сделать)
-string = str (input("Введите строку:"))
-sub_string = str (input("Введите подстроку:"))
-for i in range(len(string)):
-    h = ""
-    for j in range(len(sub_string)):
-        if i + j < len(string):
-            h += string[i + j]
-        if h == sub_string:
-            print(i)
+# string = str (input("Введите строку:"))
+# sub_string = str (input("Введите подстроку:"))
+# for i in range(len(string)):
+#     h = ""
+#     for j in range(len(sub_string)):
+#         if i + j < len(string):
+#             h += string[i + j]
+#         if h == sub_string:
+#             print(i)
