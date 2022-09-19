@@ -96,7 +96,7 @@
     
 # print("big :{0} percent, small :{1} percent".format(first,second))  
 
-#ДЗ Задание 6 
+#ДЗ Задание 6 (Вообще 5, но мне было интересно его сделать)
 string = str (input("Введите строку:"))
 sub_string = str (input("Введите подстроку:"))
 for i in range(len(string)):
