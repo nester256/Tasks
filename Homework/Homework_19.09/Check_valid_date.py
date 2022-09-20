@@ -30,9 +30,13 @@ def valid_d(date):
     date_str = date.split(".")
 
     # print("Число:", date_str[0], "Месяц:", date_str[1], "Год:", date_str[2])
-    month = int(date_str[1])
-    day = int(date_str[0])
-    if month < 12 or month > 1:
+    try:
+        month = int(date_str[1])
+        day = int(date_str[0])
+    except Exception:
+        print("Ошибка! Неверный формат!")
+        return False
+    if 1 <= month <= 12:
         if month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12:
             return True if (1 <= day <= 31) else False
         elif month == 4 or month == 6 or month == 9 or month == 11:
