@@ -28,4 +28,5 @@ def top_10(text):
         print("{0}\t{1}".format(word, num))
 
 
-print(top_10("Привет я Питон, но не просто питон, а питон питонов. Всем питонам питон. Ну всё я попитонил"))
+file = open("23.09.22/file.txt", "r")
+print(top_10(file.read()))
