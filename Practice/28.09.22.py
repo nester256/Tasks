@@ -38,7 +38,8 @@ def some_date(cur_date, n):
         return (cur_date + interval).isoformat()
 
 
-# print(not some_date("12.Привет.2022", 100) is None)
+print(some_date("12.02.2022", 100))
+
 
 def del_file(my_path, string):
     for path, _, files in os.walk(my_path):  # Тут циганские фокусы
