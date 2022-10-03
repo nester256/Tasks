@@ -1,7 +1,4 @@
-import pytest
-
 # from main import add_two, calc_two
-from task_for_seminar import mult_10
 
 
 #
@@ -47,7 +44,7 @@ from task_for_seminar import mult_10
 # Проверка на ошибки! Именно отлов ошибок
 
 
-@pytest.mark.xfail(ValueError)  # Добавляет проверку ошибок
-def test_mult_10():
-    with pytest.raises(ValueError):
-        assert mult_10("hello") == 100
+# @pytest.mark.xfail(ValueError)  # Добавляет проверку ошибок
+# def test_mult_10():
+#     with pytest.raises(ValueError) as err:
+#         assert mult_10("10") == 100

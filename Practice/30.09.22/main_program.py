@@ -9,7 +9,7 @@ def read_log_file(file_name):
     # return dict_for_log
 
 
-print(read_log_file("../123"))
+# print(read_log_file("test"))
 
 
 def division_num(a, b):
