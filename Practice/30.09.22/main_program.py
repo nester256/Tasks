@@ -15,4 +15,4 @@ print(read_log_file("../123"))
 def division_num(a, b):
     return a / b
 
-def user_registrator(user_login: str, user_password)
+# def user_registrator(user_login: str, user_password)

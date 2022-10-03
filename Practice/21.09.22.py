@@ -1,3 +1,6 @@
+import string
+
+
 def f_1(string, char):
     return string.replace(char, "")
 
@@ -17,9 +20,9 @@ dict_2 = {"Пылесос": 4,
           "Утюг": 3,
           "Ноутбук": 10,
           "Стол": 10}
-# print(f_2(dict_2,["Пылесос", "Ноутбук", "Стол"]))
 
-import string
+
+# print(f_2(dict_2,["Пылесос", "Ноутбук", "Стол"]))
 
 
 def f_3(n=26, step=1):
@@ -56,6 +59,5 @@ def f_5(list_5, list_6):
                 new_list.append(str_1)
     return new_list
 
-
-#print(f_5([1, 2, 3, 4], [3, 4, 5, 6]))
+# print(f_5([1, 2, 3, 4], [3, 4, 5, 6]))
 #   sets

@@ -2,6 +2,7 @@
 # Если его нет - создаёт
 import os
 import shutil
+from datetime import date, timedelta
 
 
 def check_valid_file(file_name):
@@ -18,7 +19,6 @@ def check_valid_file(file_name):
 # check_valid_file("123")
 
 # 12.02.2022
-from datetime import date, timedelta
 
 
 def some_date(cur_date, n):

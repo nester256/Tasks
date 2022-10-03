@@ -48,4 +48,3 @@ def valid_d(date):
                 return True if (1 <= day <= 28) else False
     else:
         return False
-

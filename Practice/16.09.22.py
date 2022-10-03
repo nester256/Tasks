@@ -1,5 +1,6 @@
 # Приколюхи c try except
 import random
+import time
 
 
 def err_test_0():
@@ -34,7 +35,6 @@ def err_test_1():
 
 # err_test_1()
 
-import time
 
 # Пример подсчёта времени
 # def complex_function():
@@ -46,22 +46,23 @@ import time
 # complex_function()
 # print("Время выполнения: ", time.time() - initial_time)
 
-import random, time
 
-def range_multiply(n, step, i = 1):
+def range_multiply(n, step, i=1):
     while i <= n:
         yield i
         i *= step
+
 
 def time_for_method():
     for i in [1, 7]:
         start = time.time()
         quant = 10 ** i
         sorted([random.randint(0, i) for _ in range(i)])
-        end = time.time() - start
+        time.time() - start
         print("Заняло времени: %f: %f" % (quant, time.time() - start))
 
-#time_for_method()
+
+# time_for_method()
 
 def change_char(ch, n):
     alph_len = 26

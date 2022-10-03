@@ -106,13 +106,15 @@ def dels_num(m):
         if m % i == 0:
             yield i
 
+
 # print(*dels_num(50))
 
 def f(n):
     if n == 0:
         return 1
     else:
-        return n - m(f(n-1))
+        return n - m(f(n - 1))
+
 
 def m(n):
     if n == 0:

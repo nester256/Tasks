@@ -1,4 +1,6 @@
 # Bingo
+import random
+
 
 # Это функция проверки
 def leader(n):
@@ -16,9 +18,6 @@ def leader(n):
         print(l_1.pop())
 
 
-import random
-
-
 # Генерация карточки 5 х 5
 def gen_card(n):
     list_1 = []
@@ -31,7 +30,8 @@ def gen_card(n):
         resolve.append(list_1[i * 5: (i + 1) * 5])
     return resolve
 
-#Проверить карточку
+
+# Проверить карточку
 def end_test(card):
     for string in card:
         if string.count('X') == 5:
@@ -43,6 +43,7 @@ def end_test(card):
         if lst.count('X') == 5:
             return True
     return False
+
 
 # Принять карточку
 def take_card(card):
@@ -63,7 +64,4 @@ def take_card(card):
             return
 
 
-
 take_card(gen_card(90))
-
-

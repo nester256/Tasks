@@ -18,5 +18,4 @@ def calc_two(eq: str):
         elif sym == "/":
             return first / snd
 
-
-#print(calc_two("1 + 2"))
+# print(calc_two("1 + 2"))

@@ -2,6 +2,7 @@
 # **args - позиционные аргументы
 # **kwargs - ключевые аргументы
 import math
+import time
 
 
 # def announnce(function):
@@ -66,13 +67,10 @@ def rounding_2(n):
 
 
 # 2 функция проверки номера телефона
-from check_validation_phone import valid_phone
 
 # print(valid_phone(input("Введите номер: ")))
 
 # Декоратор, выводящий время выполнения функции
-
-import time
 
 
 def time_1(function):
@@ -83,10 +81,13 @@ def time_1(function):
         time_gone = time.time() - inital_time
         print("time of work", time_gone)
         return result
+
     return new_time
+
 
 @time_1
 def f():
     time.sleep(3)
+
 
 print(f())

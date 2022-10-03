@@ -3,4 +3,4 @@ def valid_phone(number):
     start = number[:3] + number[6] == "+7()"
     then = (number[3:6] + number[7:10] + number[11:13] + number[14:]).isdigit()
     end = number[10] + number[13] == "--"
-    return start == True and then == True and end == True and len_num == True
+    return start and then and end and len_num

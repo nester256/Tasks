@@ -1,7 +1,8 @@
 import pytest
 
 # from main import add_two, calc_two
-from task_for_seminar import *
+from task_for_seminar import mult_10
+
 
 #
 # tests = [(2, 4), (0, 2), (10, 12), (100, 102), (-10, -8)]
@@ -43,10 +44,10 @@ from task_for_seminar import *
 # def test_hashtag(test_inp, result):
 #     assert go_to_NSWE(test_inp) == result
 
-#Проверка на ошибки! Именно отлов ошибок
+# Проверка на ошибки! Именно отлов ошибок
 
 
-@pytest.mark.xfail(ValueError) #Добавляет проверку ошибок
+@pytest.mark.xfail(ValueError)  # Добавляет проверку ошибок
 def test_mult_10():
-    with pytest.raises(ValueError) as error:
+    with pytest.raises(ValueError):
         assert mult_10("hello") == 100
