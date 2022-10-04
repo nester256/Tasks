@@ -22,4 +22,4 @@ def insanity_captain(list_of_insanity_notes: list, date_of_start: str):
                                 list_of_insanity_notes[i] + "\n")
         log_file.close()
 
-# insanity_captain(["Плывём", "Не плывём", "Тонем"], "20-02-1678")
+# insanity_captain(["Плывём", "Не плывём", "Тонем"], "20-02-1678"
