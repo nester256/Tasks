@@ -21,8 +21,7 @@ def valid_d(date):
                 if year % 400 == 0:
                     return True
                 return False
-            else:
-                return True
+            return True
         return False
 
     date_str = date.split(".")
