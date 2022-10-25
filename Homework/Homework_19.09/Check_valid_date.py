@@ -41,7 +41,6 @@ def valid_d(date):
         elif month == 2:
             if is_leap_year(date_str[2]):
                 return 1 <= day <= 29
-            else:
-                return 1 <= day <= 28
+            return 1 <= day <= 28
     else:
         return False
