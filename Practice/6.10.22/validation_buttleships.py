@@ -21,7 +21,6 @@ def check_valid_dsh(list_vs):
                     list_vs[i + 1]
 
     print(count_all)
-    return
 
 
 check_valid_dsh(list_for_psh)

@@ -62,8 +62,7 @@ def rounding_2(n):
     dif = n - int(n)
     if dif >= 0.5:
         return math.ceil(n)
-    else:
-        return math.floor(n)
+    return math.floor(n)
 
 
 # 2 функция проверки номера телефона
