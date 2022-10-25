@@ -1,4 +1,4 @@
-from main import add_two, calc_two, mult_10
+from main import mult_10
 
 import pytest
 
