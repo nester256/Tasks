@@ -22,5 +22,4 @@ def go_to_NSWE(list_1):
     return list_1
 
 
-def mult_10(text: str) -> int:
-    return int(text) * 10
+
