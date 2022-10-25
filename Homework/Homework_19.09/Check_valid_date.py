@@ -34,14 +34,14 @@ def valid_d(date):
         print("Ошибка! Неверный формат!")
         return False
     if 1 <= month <= 12:
-        if month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12:
-            return True if (1 <= day <= 31) else False
-        elif month == 4 or month == 6 or month == 9 or month == 11:
-            return True if (1 <= day <= 30) else False
+        if month in [1, 3, 5, 7, 8, 10, 12]:
+            return 1 <= day <= 31
+        elif month in [4, 6, 9, 11]:
+            return 1 <= day <= 30
         elif month == 2:
             if is_leap_year(date_str[2]):
-                return True if (1 <= day <= 29) else False
+                return 1 <= day <= 29
             else:
-                return True if (1 <= day <= 28) else False
+                return 1 <= day <= 28
     else:
         return False
