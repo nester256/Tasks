@@ -6,9 +6,9 @@ from datetime import date, timedelta
 
 
 def check_valid_file(file_name):
-    isExist = os.path.exists(file_name)
-    isFile = os.path.isfile(file_name)
-    if isExist and isFile:
+    is_exist = os.path.exists(file_name)
+    is_file = os.path.isfile(file_name)
+    if is_exist and is_file:
         print("Всё отлично!")
     else:
         new_file = open(file_name, "w")
@@ -45,8 +45,8 @@ def del_file(my_path, string):
     for path, _, files in os.walk(my_path):  # Тут циганские фокусы
         for file in files:
             if string in file:
-                # os.remove(os.path.join(path, file))
-                os.system("rm \"{0}\"".format(os.path.join(path, file)))
+                os.remove(os.path.join(path, file))
+                # os.system("rm \"{0}\"".format(os.path.join(path, file)))
 
 
 def move_file(file_path, new_path):
