@@ -20,6 +20,3 @@ def go_to_NSWE(list_1):
                 run = True
                 break
     return list_1
-
-
-
