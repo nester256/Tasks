@@ -24,8 +24,7 @@ def valid_d(date):
                     return False
             else:
                 return True
-        else:
-            return False
+        return False
 
     date_str = date.split(".")
 
