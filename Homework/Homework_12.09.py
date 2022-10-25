@@ -78,8 +78,7 @@ def find_big_letters(s):
             big_letters += 1
     if big_letters > mini_letters:
         return True
-    else:
-        return False
+    return False
 
 
 strings = str(input()).split()

@@ -54,7 +54,7 @@ def range_multiply(n, step, i=1):
 
 
 def time_for_method():
-    for i in [1, 7]:
+    for i in range(1, 7):
         start = time.time()
         quant = 10 ** i
         sorted([random.randint(0, i) for _ in range(i)])
@@ -77,8 +77,10 @@ def change_char(ch, n):
         if num > end:
             num = start + (num - end)
         return chr(num)
+    return start
 
-    def caesar(text, n):
-        result = ""
-        for ch in text:
-            result += change_char(ch, n)
+
+def caesar(text, n):
+    result = ""
+    for ch in text:
+        result += change_char(ch, n)

@@ -19,10 +19,9 @@ def print_to_nn(n):
 # Примеры рекурсивных вариантов и не рекурсивных
 
 def factorial(n):
-    if n == 1 or n == 0:
+    if n in [1, 0]:
         return 1
-    else:
-        return n * factorial(n - 1)
+    return n * factorial(n - 1)
 
 
 # print(factorial(5))
@@ -65,10 +64,10 @@ def digits_for_right(n):
 
 # digits_for_right(12345)
 
-def digits_for_rightt(n):
-    n = str(n)
-    for sum in n:
-        print(int(sum))
+# def digits_for_rightt(n):
+#     n = str(n)
+#     for sum in n:
+#         print(int(sum))
 
 
 # digits_for_right(12345)
@@ -76,19 +75,17 @@ def digits_for_rightt(n):
 def sum_n(n):
     if n <= 1:
         return n
-    else:
-        return n + sum_n(n - 1)
+    return n + sum_n(n - 1)
 
 
 # print(sum_n(6))
 
 
 def sum_nn(n, sum_all=0):
-    sum_all = sum_all + n
+    sum_all += n
     if n <= 1:
         return n
-    else:
-        return n + sum_nn(n - 1, sum_all)
+    return n + sum_nn(n - 1, sum_all)
 
 
 # print(sum_nn(6))
@@ -101,10 +98,10 @@ def sum_nnn(n):
     return sum_all
 
 
-def dels_num(m):
-    for i in range(1, m + 1):
-        if m % i == 0:
-            yield i
+# def dels_num(m):
+#     for i in range(1, m + 1):
+#         if m % i == 0:
+#             yield i
 
 
 # print(*dels_num(50))
@@ -112,12 +109,9 @@ def dels_num(m):
 def f(n):
     if n == 0:
         return 1
-    else:
-        return n - m(f(n - 1))
+    return n - m(f(n - 1))
 
 
 def m(n):
     if n == 0:
         return 0
-    else:
-        return

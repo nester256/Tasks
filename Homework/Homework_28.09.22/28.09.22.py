@@ -18,7 +18,7 @@ def insanity_captain(list_of_insanity_notes: list, date_of_start: str):
     else:
         log_file = open("log_of_insanity_captain.txt", "w")
         for i in range(len(list_of_insanity_notes)):
-            log_file.writelines(str((my_date + timedelta(days=i)).strftime('%d-%m-%Y')) + " : " + \
+            log_file.writelines(str((my_date + timedelta(days=i)).strftime('%d-%m-%Y')) + " : " +
                                 list_of_insanity_notes[i] + "\n")
         log_file.close()
 

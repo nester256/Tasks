@@ -18,4 +18,8 @@ def calc_two(eq: str):
         elif sym == "/":
             return first / snd
 
+
 # print(calc_two("1 + 2"))
+
+def mult_10(text: str) -> int:
+    return int(text) * 10
