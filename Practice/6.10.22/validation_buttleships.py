@@ -11,7 +11,6 @@ list_for_psh = [[1, 0, 0, 0, 0, 0, 0, 0, 1, 0],
 
 
 def check_valid_dsh(list_vs):
-    count_all, count_1, count_2, count_3, count_4 = 0, 0, 0, 0, 0
     # По горизонтали
     for i in range(10):
         for j in range(10):
