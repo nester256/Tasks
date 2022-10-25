@@ -1,6 +1,6 @@
 def read_log_file(file_name):
     with open(file_name, "r") as file:
-        return {k: v.replace("\n", "") for k, v in [x.split("=") for x in file.readlines()]}
+        return {k: v.replace("\n", "") for k, v in list(x.split("=") for x in file.readlines())}
     # list_k_v = []
     # for k_v in text_in_file:
     #     list_k_v.append(k_v.split('='))
