@@ -1,7 +1,5 @@
 from main import mult_10
 
-import pytest
-
 
 #
 # tests = [(2, 4), (0, 2), (10, 12), (100, 102), (-10, -8)]
@@ -46,7 +44,5 @@ import pytest
 # Проверка на ошибки! Именно отлов ошибок
 
 
-@pytest.mark.xfail(ValueError)  # Добавляет проверку ошибок
 def test_mult_10():
-    with pytest.raises(ValueError) as err:
-        assert mult_10("10") == 100
+    assert mult_10("10") == 100
