@@ -75,19 +75,17 @@ def digits_for_right(n):
 def sum_n(n):
     if n <= 1:
         return n
-    else:
-        return n + sum_n(n - 1)
+    return n + sum_n(n - 1)
 
 
 # print(sum_n(6))
 
 
 def sum_nn(n, sum_all=0):
-    sum_all = sum_all + n
+    sum_all += n
     if n <= 1:
         return n
-    else:
-        return n + sum_nn(n - 1, sum_all)
+    return n + sum_nn(n - 1, sum_all)
 
 
 # print(sum_nn(6))
@@ -111,12 +109,9 @@ def sum_nnn(n):
 def f(n):
     if n == 0:
         return 1
-    else:
-        return n - m(f(n - 1))
+    return n - m(f(n - 1))
 
 
 def m(n):
     if n == 0:
         return 0
-    else:
-        return
