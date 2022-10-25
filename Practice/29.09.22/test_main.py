@@ -43,6 +43,5 @@ from main import mult_10
 
 # Проверка на ошибки! Именно отлов ошибок
 
-
 def test_mult_10():
     assert mult_10("10") == 100
