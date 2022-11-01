@@ -26,7 +26,7 @@ class Student(Human):
         self.college = college
 
     def greeting(self):
-        print("Пруэйт Насяльника, я {0}, " \
+        print("Пруэйт Насяльника, я {0}, " 
               "мине {1} годов, я не спать, я плитка делать в {2}".format(self.name, self.age, self.college))
 
     def attend_classes(self, subject):
