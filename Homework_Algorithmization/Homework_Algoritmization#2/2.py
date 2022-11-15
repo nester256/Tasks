@@ -1,3 +1,5 @@
+# Cложность O(n)
+
 def getMaximumGenerated(n: int) -> int:
     nums = [0, 1]
     i = 1

@@ -1,5 +1,5 @@
 from typing import List
-
+# Сложность O(n^2)
 
 def maxScoreSightseeingPair(values: List[int]) -> int:
     max_value = 0
