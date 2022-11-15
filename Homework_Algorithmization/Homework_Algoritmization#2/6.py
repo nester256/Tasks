@@ -1,4 +1,4 @@
-
+# Сложность O(n)
 def rob(nums):
     def simple_rob(nums):
         rob = 0

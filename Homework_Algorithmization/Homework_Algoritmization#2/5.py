@@ -1,6 +1,5 @@
 from typing import List
-
-
+# Сложность O(n^2)
 def getDescentPeriods(prices: List[int]) -> int:
     result = len(prices)
     for i in range(len(prices)):

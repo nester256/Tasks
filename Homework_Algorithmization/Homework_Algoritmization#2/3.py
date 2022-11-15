@@ -1,4 +1,4 @@
-
+# Cложность O(len(obstacleGrid) * len(obstacleGrid[0])
 def uniquePathsWithObstacles(obstacleGrid):
     if obstacleGrid[0][0] == 1:
         return 0

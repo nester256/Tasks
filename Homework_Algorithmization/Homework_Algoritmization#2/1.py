@@ -1,7 +1,7 @@
+
 import time
 from typing import List
-
-
+# Примерная сложность O(n^5)
 def countSquares(matrix: List[List[int]]) -> int:
     res = 0
     # Для единичных
