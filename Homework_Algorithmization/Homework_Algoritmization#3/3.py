@@ -17,7 +17,7 @@ tree.left.right = TreeNode(15)
 def averageTreeBinary(root: TreeNode):
     queue = []                      # очередь для уровней
     result = []                     # список результатов
-    queue.append(root)              # добавляем голову нашей змеи :)
+    queue.append(root)              # добавляем начало нашего дерева :)
 
     while (queue):                  # Пока наше дерево есть мы идём по его уровням
         qlen = len(queue)           # длинна очереди (т.е сколько на этом уровне есть ячеек)
