@@ -17,20 +17,21 @@ tree_2 = TreeNode(1, TreeNode(2))
 
 
 def diameterOfBinaryTree(root: TreeNode) -> int:
-    def findDepth(root):
-        if root is None:
+    def findDepth(root):        # Данный метод ищет глубину ветки используя рекурсию
+        if root is None:       # Если ячейка нулевая то возвращает 0
             return 0
 
         return 1 + max(findDepth(root.left), findDepth(root.right))
+                                # С помощью рекурсии находит максимальную глубину ветки + 1 так как от начала тоже есть путь
 
-    if root is None:
+    if root is None:                                             # Если ячейка нулевая то возвращает 0
         return 0
-    left = findDepth(root.left)
-    right = findDepth(root.right)
-    left_diameter = diameterOfBinaryTree(root.left)
-    right_diameter = diameterOfBinaryTree(root.right)
+    left = findDepth(root.left)                                   # Глубина левой ветки
+    right = findDepth(root.right)                                 # Глубина правой ветки
+    left_diameter = diameterOfBinaryTree(root.left)              # Рекурсия для левой ветки что бы найти диаметр
+    right_diameter = diameterOfBinaryTree(root.right)            # Рекурсия для правой ветки что бы найти диаметр
 
-    return max(left + right, max(left_diameter, right_diameter))
+    return max(left + right, max(left_diameter, right_diameter))  # Возвращает диаметр дерева или же ветвей (зависит от этапа рекурсии)
 
 
 print(diameterOfBinaryTree(tree_2))
