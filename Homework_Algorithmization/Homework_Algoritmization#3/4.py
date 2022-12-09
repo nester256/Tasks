@@ -5,15 +5,15 @@ class LinkedList:
         self.next = next
 
 
-head = LinkedList(1, LinkedList(0, LinkedList(1)))
+head = LinkedList(1, LinkedList(0, LinkedList(1))) # Объявляем нашу змею :)
 
 
 def initList(head: LinkedList):
-    res = ""
-    while head:
-        res += str(head.val)
-        head = head.next
-    return (int(res, 2))
+    res = "" # Результат будем записывать сюда
+    while head: # Идём пока змея не кончится
+        res += str(head.val) # Записываем значение элемента змеи
+        head = head.next # Двигаемся дальше по змее
+    return (int(res, 2)) # Переводим наше значение по двочиной системе исчисления и возвращаем
 
 
 print(initList(head))

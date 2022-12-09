@@ -13,7 +13,7 @@ tree.left.left = TreeNode(5)
 
 
 def binaryTreePaths(root):
-    queue = []
+    queue = [] # очередь для уровней
     result = []
     queue.append(root)
     left = str(queue[0].val) + "->"
