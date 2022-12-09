@@ -39,7 +39,7 @@ def binaryTreePaths(root):
 
     result.append(left)                                     # Добавляем левую ветку
     result.append(right)                                    # Добавляем правую ветку
-    return result                                           # Возвращаем все значения
+    return result                                           # Возвращаем результат
 
 
 print(binaryTreePaths(tree))
