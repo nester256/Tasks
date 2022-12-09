@@ -1,0 +1,29 @@
+{
+  "manf" : "BMW",
+  "name" : "X3",
+  "engine" : {
+    "mark" : "BMW",
+    "volume" : 2.0,
+    "hp" : 249
+  },
+  "body" : "aluminium",
+  "on_the_go" : true,
+  "wheels" : [
+    {
+      "mark" : "yokohama",
+      "diameter" : 18
+    },
+    {
+      "mark" : "yokohama",
+      "diameter" : 18
+    },
+    {
+      "mark" : "yokohama",
+      "diameter" : 18
+    },
+    {
+      "mark" : "yokohama",
+      "diameter" : 18
+    }
+  ]
+}

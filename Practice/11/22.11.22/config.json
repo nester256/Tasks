@@ -1,0 +1,17 @@
+{
+  "ip" : "192.168.0.1",
+  "name" : "laptop",
+  "device": "HP1234",
+  "ports": [
+    {
+      "port": 1000,
+      "name": "WI-Fi",
+      "device": "WI-FI Controller"
+    },
+    {
+      "port": 999,
+      "name": "Ethernet",
+      "device": "Ethernet Controller"
+    }
+  ]
+}

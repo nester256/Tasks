@@ -1,0 +1,46 @@
+{
+  "cars" :
+  [
+    {
+      "manf" : "BMW",
+      "name" : "X3",
+      "engine" : {
+        "mark" : "BMW",
+        "volume" : 2.0,
+        "hp" : 249
+      },
+      "body" : "aluminium",
+      "on_the_go" : true,
+      "wheels" : [
+        {
+          "mark" : "yokohama",
+          "diameter" : 18
+        },
+        {
+          "mark" : "yokohama",
+          "diameter" : 18
+        },
+        {
+          "mark" : "yokohama",
+          "diameter" : 18
+        },
+        {
+          "mark" : "yokohama",
+          "diameter" : 18
+        }
+      ]
+    },
+    {
+      "manf" : "Mercedes",
+      "name" : "CLS200",
+      "engine" : {
+        "mark" : "Mercedes-Benz",
+        "volume" : 3.0,
+        "hp" : 390
+      },
+      "body" : "aluminium",
+      "on_the_go" : false,
+      "wheels" : null
+    }
+  ]
+}

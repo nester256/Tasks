@@ -28,5 +28,5 @@ def top_10(text):
         print("{0}\t{1}".format(word, num))
 
 
-file = open("23.09.22/file.txt", "r")
+file = open("9/23.09.22/file.txt", "r")
 print(top_10(file.read()))
