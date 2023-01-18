@@ -13,7 +13,8 @@ def uniquePathsWithObstacles(obstacleGrid):
                 obstacleGrid[row][col] = obstacleGrid[row - 1][col] + obstacleGrid[row][col - 1]
             else:
                 obstacleGrid[row][col] = 0
-    return obstacleGrid[len(obstacleGrid) - 1][len(obstacleGrid[0]) - 1]
+    # return obstacleGrid[len(obstacleGrid) - 1][len(obstacleGrid[0]) - 1]
+    return obstacleGrid
 
 
-print(uniquePathsWithObstacles([[0, 0, 0], [0, 1, 0], [0, 0, 0]]))
+print(uniquePathsWithObstacles([[0, 0, 0], [1, 0, 0], [0, 0, 0]]))

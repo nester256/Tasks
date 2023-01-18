@@ -28,3 +28,4 @@ def closedIsland(self, grid: List[List[int]]) -> int:
                 res += 1                # увеличивает счётчик
 
     return res                          # возвращает счётчик
+

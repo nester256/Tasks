@@ -9,7 +9,7 @@ class TreeNode:
 tree = TreeNode(1)
 tree.left = TreeNode(2)
 tree.right = TreeNode(3)
-tree.left.left = TreeNode(5)
+tree.left.right = TreeNode(5)
                                         # Объявляем дерево
 
 
